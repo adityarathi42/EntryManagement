@@ -1,6 +1,9 @@
-# SDEIntern
+# SDEIntern Assignment: Entry Manager Application
 Name: Aditya Rathi 
 Innovaccer Summer Geeks Assignment 2019 for SDE Intern Position 
+
+Tech Stack used: Java, Firebase, XML
+IDE used: Android Studio
 
 INSTALLATION OF THE APPLICATION:
 The application is supported in minimum API level - 21 (Android Version 5.0)

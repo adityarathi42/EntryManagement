@@ -24,7 +24,7 @@ WORKFLOW OF THE APPLICATION:
 
 ![Screenshot from 2019-11-28 20-35-01](https://user-images.githubusercontent.com/32017788/69823705-b05eff00-122f-11ea-8774-c6a9dff18557.jpg)
 
-Some Screenshots of the application:
+Some Screenshots that show the working of the application:
 
 1. Receptionist Panel:
 

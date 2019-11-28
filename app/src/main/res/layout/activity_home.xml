@@ -8,40 +8,28 @@
 
     <Button
         android:id="@+id/checkinbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="353dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#0091EA"
         android:onClick="checkin"
-        android:text="Check-In a visitor"
-        app:layout_constraintBottom_toTopOf="@+id/createhostbutton"
-        tools:layout_editor_absoluteX="153dp" />
+        android:text="Check-In a Visitor"
+        app:layout_constraintBottom_toTopOf="@+id/checkoutbutton"
+        tools:layout_editor_absoluteX="26dp" />
 
     <Button
         android:id="@+id/checkoutbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="351dp"
+        android:layout_height="130dp"
 
-        android:text="Check-Out a visitor "
-        app:layout_constraintBottom_toTopOf="@+id/createhostbutton"
-        tools:layout_editor_absoluteX="145dp" />
-
-    <Button
-        android:id="@+id/createhostbutton"
-        android:layout_width="158dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="28dp"
-        android:text="Create a host"
-        android:onClick="createHost"
-        app:layout_constraintBottom_toTopOf="@+id/signoutbutton"
-        tools:layout_editor_absoluteX="153dp" />
-
-    <Button
-        android:id="@+id/signoutbutton"
-        android:layout_width="129dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="300dp"
-        android:text="Sign out"
+        android:layout_marginBottom="284dp"
+        android:backgroundTint="#FFAB00"
+        android:onClick="checkout"
+        android:text="Check-Out a visitor"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="161dp" />
+        tools:layout_editor_absoluteX="30dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

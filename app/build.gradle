@@ -50,5 +50,13 @@ dependencies {
     // implementation 'com.google.android.gms:play-services:12.0.1'
 
     implementation 'sun.bob:mcalendarview:1.1.1'
+
+    //database
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/mail.jar')
+
 }
 apply plugin: 'com.google.gms.google-services'

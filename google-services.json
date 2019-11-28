@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1077106151959",
+    "firebase_url": "https://entry-42fe4.firebaseio.com",
+    "project_id": "entry-42fe4",
+    "storage_bucket": "entry-42fe4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077106151959:android:0636b532a49ebe2d00c252",
+        "android_client_info": {
+          "package_name": "com.example.entrymanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077106151959-sbfabq8mrblcg1cg5s5ci7g6p4l7ch8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0BsBI7670wbuvJiIkHq0CCRKDepBFRys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077106151959-sbfabq8mrblcg1cg5s5ci7g6p4l7ch8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

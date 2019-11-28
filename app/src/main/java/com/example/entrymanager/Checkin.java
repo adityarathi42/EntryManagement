@@ -25,20 +25,13 @@ public class Checkin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        this.getSupportActionBar().setTitle("Check-in");
         setContentView(R.layout.activity_checkin);
         database = FirebaseDatabase.getInstance();
         dr = database.getReference();
-        //on clo
         requestSmsPermission();
 
-//        dr.child("Visitor").child(vname.getText().toString()).child("Phone").setValue(vphone.getText().toString());
-//        dr.child("Visitor").child(vname.getText().toString()).child("Email").setValue(vmail.getText().toString());
-//        dr.child("Visitor").child(vname.getText().toString()).child("CheckIn").setValue(intime.getText().toString());
-//        dr.child("Visitor").child(vname.getText().toString()).child("CheckOut").setValue(outtime.getText().toString());
-//
-//        dr.child("Host").child(vname.getText().toString()).child("Name").setValue(hname.getText().toString());
-//        dr.child("Host").child(vname.getText().toString()).child("Phone").setValue(hphone.getText().toString());
-//        dr.child("Host").child(vname.getText().toString()).child("Email").setValue(hmail.getText().toString());
     }
     public void goCheckIn(View view) {
 
@@ -82,7 +75,7 @@ public class Checkin extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
         PendingIntent pi = PendingIntent.getActivity(getApplicationContext(), 0, intent, 0);
 
-        //Get the SmsManager instance and call the sendTextMessage method to send message
+
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(hostphone, null, message, pi, null);
 
@@ -93,9 +86,9 @@ public class Checkin extends AppCompatActivity {
 
     private void requestSmsPermission() {
 
-        // check permission is given
+
         if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
-            // request permission (see result in onRequestPermissionsResult() method)
+
             ActivityCompat.requestPermissions(Checkin.this,
                     new String[]{Manifest.permission.SEND_SMS},
                     PERMISSION_SEND_SMS);

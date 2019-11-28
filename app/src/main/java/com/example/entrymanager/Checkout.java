@@ -35,7 +35,7 @@ public class Checkout extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
-
+        this.getSupportActionBar().setTitle("Check-out");
         database = FirebaseDatabase.getInstance();
         dr = database.getReference();
 
@@ -61,8 +61,7 @@ public class Checkout extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        // Failed to read value
-                        // Log.w(TAG, "Failed to read value.", error.toException());
+
                     }
                 });
                 //HOST NAME
@@ -78,8 +77,7 @@ public class Checkout extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        // Failed to read value
-                        // Log.w(TAG, "Failed to read value.", error.toException());
+
                     }
                 });
 
@@ -96,8 +94,7 @@ public class Checkout extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        // Failed to read value
-                        // Log.w(TAG, "Failed to read value.", error.toException());
+
                     }
                 });
 
@@ -114,8 +111,7 @@ public class Checkout extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        // Failed to read value
-                        // Log.w(TAG, "Failed to read value.", error.toException());
+
                     }
                 });
 
@@ -128,11 +124,9 @@ public class Checkout extends AppCompatActivity {
     }
 
     public void goCheckOut(View view) {
-        //EditText vphone=findViewById(R.id.vphone2);
-        //String visitorphone=vphone.getText().toString();
+
         String currentTime = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
         String message="You have been checked out! Here are the visit details: "+"\nName - "+name+"\nEmail - "+mail+"\nPhone - "+p+"\nHost Name - "+hname+"\nCheckIn Time - "+intime+"\nCheck-out Time - "+currentTime ;
-//String mes = "You have been checked out! Here are the visit details: "+ "\nMail: "+mail+"\nHost Name: "+hname+"\nCheckIn Time: "+intime;
     JavaMailAPI mailToHost = new JavaMailAPI(this, mail, "Visit Details " , message);
 
         mailToHost.execute();

@@ -1,4 +1,4 @@
-# SDEIntern Assignment: Entry Manager Application
+Entry Manager Application 
 Name: Aditya Rathi 
 Innovaccer Summer Geeks Assignment 2019 for SDE Intern Position 
 

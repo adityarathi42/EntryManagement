@@ -1,6 +1,6 @@
 Entry Manager Application 
-Name: Aditya Rathi 
-Innovaccer Summer Geeks Assignment 2019 for SDE Intern Position 
+Made by: Aditya Rathi 
+
 
 Tech Stack used: Java, Firebase, XML
 IDE used: Android Studio
